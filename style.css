@@ -48,7 +48,7 @@ header .bx:hover{
 .logo{
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #fcd56a;
 }
@@ -460,7 +460,7 @@ form .btn:hover{
         font-size: 1rem;
     }
     .logo{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
 
