@@ -37,22 +37,20 @@ header{
     background-color: var(--second-color);
 }
 header a{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 5px 5px;
     color: #fcd56a;
 }
 header .bx:hover{
     color: #9c7404;
 }
-
 .logo{
     display: flex;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #fcd56a;
 }
-
 .navbar{
     display: flex;
 }
@@ -451,7 +449,7 @@ form .btn:hover{
 
 @media (max-width: 400px) {
     .home .home-text span{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     .home .home-text h1{
         font-size: 2.5rem;
@@ -466,7 +464,7 @@ form .btn:hover{
 
 @media (max-width: 686px) {
     .home .home-text span{
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
     .home .home-text h1{
         font-size: 3rem;
