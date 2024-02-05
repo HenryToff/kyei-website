@@ -10,7 +10,7 @@ if(isset($_POST['submit'])){
     $message = "Name: ".$name."\n"."Phone: ".$phone."\n". "wrote the following: "."\n\n.$msg;
     $headers = Form: " .$email;
 
-    if (mail($to, $subject, $massage, $headers)){
+    if (mail($to, $subject, $message, $headers)){
         echo "<h1>Message Sent! Thank you"." ".$name.", We will contact you shortly!</h1>";
 
         }
