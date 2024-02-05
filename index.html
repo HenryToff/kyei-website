@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kyei Ornament</title>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
     <header>
-        <a href="#" class="logo">KYEI'S ORNAMENTS</a>
+        <a href="#home" class="logo">KYEI'S ORNAMENTS</a>
         <div class="bx bx-menu" id="menu-icon"></div>
         <ul class="navbar">
             <li><a href="#home">Home</a></li>
@@ -596,11 +597,11 @@
                 </div>
             </div>
             <div class="contact-form">
-                <form action="">
-                    <input type="text" placeholder="Name*">
-                    <input type="email" name="" id="" placeholder="Email*">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Message*"></textarea>
-                    <input type="button" value="submit" class="btn">
+                <form action="form-holder.php" method="POST">
+                    <input type="text" name="name" placeholder="Name*">
+                    <input type="email" name="email" id="" placeholder="Email*">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Message*"></textarea>
+                    <input type="submit" value="submit" class="btn">
                 </form>
             </div>
         </div>
