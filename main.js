@@ -13,25 +13,25 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
 }
 
-    function sendEmail(){
- 
-        const Username = document.getElementById('Username').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('msg').value;
+function sendEmail(){
 
-        Email.send ({
-            Host : "smtp.elasticemail.com",
-            Username : "kyeiornament@gmail.com",
-            Password : "48E5181490036E5DCB84F58C2498729295FA",
-            To : 'kyeiornament@gmail.com',
-            From : "kyeiornament@gmail.com",
-            Subject : `${Username} Sent you a Message!`,
-            Body : ` Name: ${Username} <br/> Email: ${email} <br/> Message: ${message}`,
+    let Username = document.getElementById("Username").value;
+    let emal = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
 
-        }).then(
-           message => alert("Mail sent! Thank You")
-        );
-    }
+    let body = "Name:" + Username + " <br/> Email: " + emal + " <br/> Message: "+ message;
+
+    Email.send({
+        SecureToken : '0839fa01-ad36-420a-82e4-fa0c1367786c',
+        To : 'kyeiornament@gmail.com',
+        From : "kyeiornament@gmail.com",
+        Subject : "Mail from " + Username+ "",
+        Body : body
+    }).then(
+    message => alert("Mail Sent! Thank You...")
+    )
+
+}  
 
 
 
