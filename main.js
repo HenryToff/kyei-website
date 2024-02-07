@@ -13,16 +13,11 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
 }
 
-
+    function sendEmail(){
  
-    const Username = document.getElementById('Username');
-    const email = document.getElementById('email');
-    const message = document.getElementById('message');
-
-    const submit = document.getElementsByClassName('form')[0];
-
-    submit.addEventListener('submit', (e) =>{
-        e.preventDefault();
+        const Username = document.getElementById('Username').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('msg').value;
 
         Email.send ({
             Host : "smtp.elasticemail.com",
@@ -36,7 +31,7 @@ window.onscroll = () =>{
         }).then(
            message => alert("Mail sent! Thank You")
         );
-    });
+    }
 
 
 
