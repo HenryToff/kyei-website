@@ -14,26 +14,30 @@ window.onscroll = () =>{
 }
 
 
+ 
+    const Username = document.getElementById('Username');
+    const email = document.getElementById('email');
+    const message = document.getElementById('message');
 
-var Username = document.getElementById('name').value;
-var email = document.getElementById('email').value;
-var msg = document.getElementById('msg').value;
+    const submit = document.getElementsByClassName('form')[0];
 
-var messageBody = "Name" + Username +
-"<br/> Email" + email +
-"<br/> Message"+ msg;
+    submit.addEventListener('submit', (e) =>{
+        e.preventDefault();
 
-function emailSend(){
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "kyeiornament@gmail.com",
-        Password : "98E5C9D43BF205C649B6D0A9CE5CB1A0022F",
-        To : 'henrydetoff@gmail.com',
-        From : "kyeiornament@gmail.com",
-        Subject : "This is the subject",
-        Body : messageBody,
-    }).then(
-      message => alert(message)
-    );
-};
+        Email.send ({
+            Host : "smtp.elasticemail.com",
+            Username : "kyeiornament@gmail.com",
+            Password : "48E5181490036E5DCB84F58C2498729295FA",
+            To : 'kyeiornament@gmail.com',
+            From : "kyeiornament@gmail.com",
+            Subject : `${Username} Sent you a Message!`,
+            Body : ` Name: ${Username} <br/> Email: ${email} <br/> Message: ${message}`,
+
+        }).then(
+           message => alert("Mail sent! Thank You")
+        );
+    });
+
+
+
 
