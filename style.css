@@ -7,7 +7,7 @@
     scroll-padding-top: 2rem;
     list-style: none;
     text-decoration: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 :root{
     --main-color: #2c2c2c;
@@ -37,8 +37,8 @@ header{
     background-color: var(--second-color);
 }
 header a{
-    font-size: 1.2rem;
-    padding: 5px 5px;
+    font-size: 1.5rem;
+    padding: 5px 1px;
     color: #fcd56a;
 }
 header .bx:hover{
@@ -46,9 +46,9 @@ header .bx:hover{
 }
 .logo{
     display: flex;
-    align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
+    align-items: center;
     color: #fcd56a;
 }
 .navbar{
@@ -123,8 +123,9 @@ header .bx:hover{
     color: #be0303;
 }
 .home-text h1{
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: var(--second-color); 
+    line-height: 4rem;
 }
 .home .number{
     color: #be0303;
@@ -135,6 +136,39 @@ header .bx:hover{
     font-size: 1.3rem;
 }
 
+
+
+.home1{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #fcd56a;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+.home1-text{
+    flex: 1 1 17rem;
+}
+.home1-img{
+    flex: 1 1 17rem;
+}
+.home1-text h1{
+    font-size: 2rem;
+    color: #424242; 
+    margin-bottom: 2rem;
+}
+.home1 .home1-text .btn{
+    margin-bottom: 40px;
+}
+.home1-text p{
+    margin: 2rem 0 1rem;
+    font-size: 1.6rem;
+}
 
 .home2{
     width: 100%;
@@ -344,9 +378,10 @@ header .bx:hover{
      margin-top: 1rem;
 }
 .social a{
-    font-size: 40px;
+    font-size: 2rem;
     color: #be0303;
     margin-right: 1rem;
+    background: #dfdede;
 }
 .social a:hover{
     color: var(--second-color);

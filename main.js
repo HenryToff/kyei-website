@@ -19,7 +19,7 @@ function sendEmail(){
     let emal = document.getElementById("email").value;
     let message = document.getElementById("message").value;
 
-    let body = "Name:" + Username + " <br/> Email: " + emal + " <br/> Message: "+ message;
+    let body = "NAME:" + Username + " <br/> EMAIL: " + emal + " <br/> MESSAGE: "+ message;
 
     Email.send({
         SecureToken : '0839fa01-ad36-420a-82e4-fa0c1367786c',
